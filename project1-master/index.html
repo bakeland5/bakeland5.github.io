@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Base template for simple d3.js visualizations</title>
+
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- jQuery and lodash -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+
+    <!-- d3.js -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- Our visualization code -->
+    <!-- <script src="visualization.js"></script> -->
+    <script src="majors.js"></script>
+    <script>
+      drawGraph("Colleges");
+    </script>
+    <style>
+  .slope-line {
+  stroke: #333;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  }
+  #tabs {
+    display:flex;
+    justify-content: space-between;
+  }
+  .tablink {
+    background-color: #000;
+
+    color: white;
+    display: inline-flex;
+
+    text-align: center;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 60px;
+    font-size: 13px;
+    width: 5%;
+
+  }
+  .tablink:hover {
+    background-color: #2e2e2e;
+    transition: all 0.2s;
+  }
+  button:focus {outline:0;}
+
+  #chart {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+  #chart-svg {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+
+  <path id="path1" />
+</style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="tabs"></div>
+      <h1 id="chart-label">Colleges</h1>
+      <!-- Our d3.js visualization will appear in #chart -->
+      <div id="chart"></div>
+    </div>
+
+    <script src="build.js"></script>
+
+  </body>
+
+
+
+</html>
