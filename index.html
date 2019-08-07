@@ -42,33 +42,27 @@
     particlesJS.load('particles-js', '/static/assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
     });
-    $("#gt").on("click", function(){
-        // console.log('clicked!')
+    $("#gt").on("mouseover", function(){
         window.pJSDom[0].pJS.particles.line_linked.color = "#B4A46A";
         window.pJSDom[0].pJS.particles.color.value = "#B4A46A";
         window.pJSDom[0].pJS.fn.particlesRefresh();
       });
-    $("#uiuc").on("click", function(){
-        // console.log('clicked!')
+    $("#uiuc").on("mouseover", function(){
         window.pJSDom[0].pJS.particles.line_linked.color = "#E84A27";
         window.pJSDom[0].pJS.particles.color.value = "#E84A27";
         window.pJSDom[0].pJS.fn.particlesRefresh();
       });
     $("#gt").on("mouseover", function(){
-        // console.log('hover')
-        $(this).stop().animate({ fontSize : '40px' })
+        $(this).stop().animate({ opacity : 0.5 })
       });
     $("#gt").on("mouseout", function(){
-        // console.log('hover')
-        $(this).stop().animate({ fontSize : '32px' })
+        $(this).stop().animate({ opacity : 1.0 })
       });
     $("#uiuc").on("mouseover", function(){
-        // console.log('hover')
-        $(this).stop().animate({ fontSize : '40px' })
+        $(this).stop().animate({ opacity : 0.5 })
       });
     $("#uiuc").on("mouseout", function(){
-        // console.log('hover')
-        $(this).stop().animate({ fontSize : '32px' })
+        $(this).stop().animate({ opacity : 1.0 })
       });
 </script>
 
