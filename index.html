@@ -43,31 +43,31 @@
     console.log('callback - particles.js config loaded');
     });
     $("#gt").on("click", function(){
-        console.log('clicked!')
+        // console.log('clicked!')
         window.pJSDom[0].pJS.particles.line_linked.color = "#B4A46A";
         window.pJSDom[0].pJS.particles.color.value = "#B4A46A";
         window.pJSDom[0].pJS.fn.particlesRefresh();
       });
     $("#uiuc").on("click", function(){
-        console.log('clicked!')
+        // console.log('clicked!')
         window.pJSDom[0].pJS.particles.line_linked.color = "#E84A27";
         window.pJSDom[0].pJS.particles.color.value = "#E84A27";
         window.pJSDom[0].pJS.fn.particlesRefresh();
       });
     $("#gt").on("mouseover", function(){
-        console.log('hover')
+        // console.log('hover')
         $(this).stop().animate({ fontSize : '40px' })
       });
     $("#gt").on("mouseout", function(){
-        console.log('hover')
+        // console.log('hover')
         $(this).stop().animate({ fontSize : '32px' })
       });
     $("#uiuc").on("mouseover", function(){
-        console.log('hover')
+        // console.log('hover')
         $(this).stop().animate({ fontSize : '40px' })
       });
     $("#uiuc").on("mouseout", function(){
-        console.log('hover')
+        // console.log('hover')
         $(this).stop().animate({ fontSize : '32px' })
       });
 </script>
