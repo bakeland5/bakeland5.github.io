@@ -1,0 +1,46 @@
+#body {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+h1{
+    color: white;
+    font-size: 100px;
+}
+
+h2{
+    color: white;
+}
+
+h4{
+    color: white;
+    display: inline;
+    padding: 50px;
+}
+
+.particles-js-canvas-el{
+    display: block;
+    vertical-align: bottom;
+    z-index: -1;
+}
